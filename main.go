@@ -79,7 +79,7 @@ var (
 var (
     TelegramToken = "" // Токен бота
     TelegramChatID = "" // ID админа
-    MutexName      = "Global\\MyUniqueMutex"
+    MutexName      = "Global\\MyUniqueMutex" // изменить MyUniqueMutex
 )
 
 const (
@@ -546,4 +546,5 @@ func main() {
 		randomDelayMs := rand.Intn(201) + 250 
         time.Sleep(time.Duration(randomDelayMs) * time.Millisecond)
 	}
+
 }
